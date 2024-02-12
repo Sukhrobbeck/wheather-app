@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js" ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="weather_header">
+          <form class="weather_search">
+            <input
+              type="text"
+              placeholder="Shaharni qidiring"
+              class="weather_search_form" />
+            <img src="./Assets/searchIcon.svg" alt="Search icon" />
+          </form>
+          <div class="wheather_units">
+            <span class="wheather_unit_celcius">
+              <img class="wheather_unit_celcius_img" src="./Assets/celcius.svg" alt="" />
+            </span>
+            <span class="wheather_unit_fahrenheit">
+              <img class="wheather_unit_fahrenheit_img" src="./Assets/fahrenheit.svg" alt="" />
+            </span>
+          </div>
+        </div>
+        <div class="wheather_body">
+          <h1 class="wheather_location"></h1>
+          <div class="wheather_date_time">
+            <p class="weather_data"></p>
+          </div>
+          <div class="wheather_forecast_wrapper">
+            <div class="wheather_forecast">
+              <div class="wheather_icon">
+                
+              </div>
+            </div>
+          </div>
+          <p class="weather_temperature"></p>
+          <div class="weather_min_max">
+            <p class="min"></p>
+            <p class="max"></p>
+          </div>
+        </div>
+        <div class="weather_info">
+          <div class="weather_card">
+            <img src="./Assets/temperature.svg" alt="temperature">
+            <p>Real Feel</p>
+            <p class="weather_real_feel"></p>
+          </div>
+          <div class="weather_card">
+            <img src="./Assets/droplet.svg" alt="temperature">
+            <p>Namlik</p>
+            <p class="weather_humidity"></p>
+          </div>
+          <div class="weather_card">
+            <img src="./Assets/wind.svg" alt="temperature">
+            <p>Shamol</p>
+            <p class="weather_wind">18&#176</p>
+          </div>
+          <div class="weather_card">
+            <img src="./Assets/pressure.svg" alt="temperature">
+            <p>Bosim</p>
+            <p class="weather_pressure">18&#176</p>
+          </div>
+        </div>
+        <div class="empty_space"></div>
+      </div>
+    </div>
+  </body>
+</html>

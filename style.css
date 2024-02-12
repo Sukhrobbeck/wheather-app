@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.container {
+  color: #fff;
+  padding: 2rem;
+  width: 80%;
+  background: #171717;
+  border-radius: 8px;
+}
+
+.weather_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather_search {
+  display: flex;
+  position: relative;
+  width: 93%;
+}
+
+input {
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5rem 2.5rem;
+  /* border-radius: 5px; */
+  color: #fff;
+  width: 100%;
+  font-size: 18px;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 17px;
+}
+
+input:hover {
+  box-shadow: 0 5px 20px 0 red;
+}
+
+input:focus {
+  border: 3px solid red;
+  box-shadow: 0 5px 20px 0 red;
+  border-radius: 8px;
+}
+
+.weather_search img {
+  position: absolute;
+  left: 3px;
+  top: 3.5px;
+  cursor: pointer;
+}
+
+.wheather_units {
+  font-size: 1.5rem;
+}
+
+.wheather_units {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  grid-gap: 10px;
+}
+
+.wheather_units span img {
+  cursor: pointer;
+}
+
+.wheather_body {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.wheather_date_time {
+  margin-bottom: 2rem;
+}
+
+.wheather_date_time p {
+  font-size: 20px;
+}
+
+.wheather_forecast_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wheather_forecast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.wheather_forecast img {
+  height: 180px;
+}
+
+.wheather_forecast p {
+  font-size: 22px;
+}
+
+.wheather_forecast:hover {
+  box-shadow: 0 5px 40px 0 red;
+}
+
+.wheather_icon {
+  padding: 0 0 30px 0;
+}
+
+.weather_temperature {
+  font-size: 2rem;
+  margin-top: 15px;
+}
+
+.weather_min_max {
+  display: flex;
+  justify-content: center;
+  grid-gap: 15px;
+}
+
+.weather_min_max p {
+  font-size: 18px;
+}
+
+.weather_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.weather_card {
+  display: flex;
+  align-items: center;
+  padding: 1.4rem;
+  grid-gap: 5px;
+  border-radius: 8px;
+  margin-bottom: 80px;
+  width: 235px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.weather_card:hover {
+  box-shadow: 0 5px 40px 0 red;
+}
+
+.weather_card p {
+  font-size: 18px;
+}
+
+.empty_space {
+  display: none;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+}
+
+@media (max-width: 1200px) {
+  .weather_search {
+    width: 85%;
+  }
+}
+
+@media (max-width: 670px) {
+  .wrapper {
+    padding-top: 50px;
+  }
+  .container {
+    padding: 1rem;
+    min-width: 450px;
+  }
+  .weather_search {
+    width: 73%;
+  }
+  .weather_info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    grid-gap: 25px;
+  }
+  .weather_card {
+    margin-bottom: 0;
+    width: 220px;
+  }
+  .empty_space {
+    display: block;
+  }
+}
